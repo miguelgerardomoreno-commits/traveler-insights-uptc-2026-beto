@@ -1,0 +1,44 @@
+# Datos de la competencia (se conservan solo en local)
+Data/
+data/
+
+# Credenciales y variables de entorno
+.env
+.env.*
+!.env.example
+kaggle.json
+
+# Entornos y cachés de Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Modelos, resultados y registros generados
+artifacts/
+models/
+outputs/
+checkpoints/
+wandb/
+mlruns/
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# Archivos temporales y del sistema
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Archivo vacío heredado; no forma parte del proyecto versionado
+proyecto_final.py.txt
