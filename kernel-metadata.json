@@ -1,0 +1,16 @@
+{
+  "id": "miguelmoreno17/team-beto",
+  "title": "Team BETO - Traveler Insights UPTC 2026",
+  "code_file": "team-beto.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "dataset_sources": [],
+  "competition_sources": [
+    "traveler-insights-uptc-2026"
+  ],
+  "kernel_sources": [],
+  "model_sources": []
+}

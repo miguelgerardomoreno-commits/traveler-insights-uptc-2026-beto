@@ -5,6 +5,7 @@ Proyecto académico de clasificación de sentimiento de reseñas turísticas en 
 ## Archivos principales
 
 - `team-beto.ipynb`: cuaderno completo para ejecutar y entregar en Kaggle.
+- `kernel-metadata.json`: configuración para actualizar el notebook `miguelmoreno17/team-beto` mediante la API de Kaggle.
 - `Data/train.csv`: conjunto de desarrollo etiquetado (818 filas).
 - `Data/test.csv`: conjunto local etiquetado reservado para evaluación final (351 filas).
 - `Data/submission.csv`: conjunto sin etiqueta para generar el envío (129 filas).
