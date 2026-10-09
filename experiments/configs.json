@@ -1,0 +1,65 @@
+{
+  "E1": {
+    "checkpoint": "beto",
+    "lr": 2e-05,
+    "epochs": 6,
+    "batch_size": 16,
+    "max_len": 192,
+    "pesos": "ninguno",
+    "congelar": false
+  },
+  "E2": {
+    "checkpoint": "beto",
+    "lr": 2e-05,
+    "epochs": 6,
+    "batch_size": 16,
+    "max_len": 192,
+    "pesos": "sqrt",
+    "congelar": false
+  },
+  "E3": {
+    "checkpoint": "beto",
+    "lr": 2e-05,
+    "epochs": 6,
+    "batch_size": 16,
+    "max_len": 192,
+    "pesos": "completo",
+    "congelar": false
+  },
+  "E4": {
+    "checkpoint": "beto",
+    "lr": 2e-05,
+    "epochs": 6,
+    "batch_size": 16,
+    "max_len": 128,
+    "pesos": "ninguno",
+    "congelar": false
+  },
+  "E5": {
+    "checkpoint": "beto",
+    "lr": 5e-05,
+    "epochs": 6,
+    "batch_size": 16,
+    "max_len": 192,
+    "pesos": "ninguno",
+    "congelar": false
+  },
+  "E6": {
+    "checkpoint": "beto",
+    "lr": 0.001,
+    "epochs": 6,
+    "batch_size": 16,
+    "max_len": 192,
+    "pesos": "ninguno",
+    "congelar": true
+  },
+  "E7": {
+    "checkpoint": "xlmr",
+    "lr": 2e-05,
+    "epochs": 6,
+    "batch_size": 16,
+    "max_len": 192,
+    "pesos": "ninguno",
+    "congelar": false
+  }
+}

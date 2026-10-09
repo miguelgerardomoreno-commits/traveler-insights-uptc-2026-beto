@@ -1,0 +1,14 @@
+id,tipo,cambio,checkpoint,acc,f1_macro,recall_neg,acc_cv,fecha,lr,epochs,batch_size,max_len,pesos,congelar,mejor_epoca,tiempo_s,mem_gpu_mb
+B0,baseline,Clase mayoritaria,sklearn,0.7777777777777778,0.2916666666666667,0.0,0.7787391841779975,2026-10-09 19:43,,,,,,,,,
+B1a,baseline,TF-IDF y regresión logística sin pesos,sklearn,0.8950617283950617,0.5636821897156855,0.0,0.8627935723114957,2026-10-09 19:43,,,,,,,,,
+B1b,baseline,TF-IDF y regresión logística con pesos,sklearn,0.9506172839506172,0.9068884150675196,0.75,0.8974042027194067,2026-10-09 19:43,,,,,,,,,
+B2,baseline,"Solo forma del texto (longitud, signos)",sklearn,0.654320987654321,0.5565862708719852,1.0,0.6118665018541409,2026-10-09 19:43,,,,,,,,,
+E1,transformer,Configuración base con BETO,beto,0.9444444444444444,0.8832242597032334,1.0,,2026-10-09 19:44,2e-05,6.0,16.0,192.0,ninguno,False,2.0,41.5,2696.0
+E2,transformer,Pesos de clase con raíz cuadrada,beto,0.9506172839506172,0.9142129091787023,1.0,,2026-10-09 19:44,2e-05,6.0,16.0,192.0,sqrt,False,3.0,35.7,2696.0
+E3,transformer,Pesos de clase completos,beto,0.9382716049382716,0.8576120297431773,1.0,,2026-10-09 19:45,2e-05,6.0,16.0,192.0,completo,False,3.0,36.1,2698.0
+E4,transformer,max_length de 128,beto,0.9567901234567902,0.952598307082396,1.0,,2026-10-09 19:46,2e-05,6.0,16.0,128.0,ninguno,False,5.0,31.6,2298.0
+E5,transformer,Learning rate de 5e-5,beto,0.9506172839506172,0.9142129091787023,1.0,,2026-10-09 19:46,5e-05,6.0,16.0,192.0,ninguno,False,3.0,37.2,2692.0
+E6,transformer,Encoder congelado (con lr de 1e-3 para la cabeza),beto,0.8950617283950617,0.5690970137638138,0.0,,2026-10-09 19:46,0.001,6.0,16.0,192.0,ninguno,True,5.0,11.0,593.0
+E7,transformer,Checkpoint XLM-R base,xlmr,0.9135802469135802,0.5931623931623932,0.0,,2026-10-09 19:48,2e-05,6.0,16.0,192.0,ninguno,False,2.0,67.2,5355.0
+CV,validacion_cruzada,5 folds con la configuración E4,beto,,,,0.9283065512978986,2026-10-09 19:50,,,,,,,,164.9,
+FINAL,modelo_final,"Entrenado con todo train, configuración E4",beto,,,,,2026-10-09 19:51,,,,,,,,39.1,2304.0

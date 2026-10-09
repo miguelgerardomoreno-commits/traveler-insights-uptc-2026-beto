@@ -1,0 +1,63 @@
+{
+  "acc_regla_solo_sitio": 0.9218,
+  "baseline_ref": "B1b",
+  "acc_cv_base": 0.8974,
+  "f1_macro_cv_base": 0.729,
+  "recall_neg_cv_base": 0.3182,
+  "acc_cv_solo_forma": 0.6119,
+  "acc_cv_base_agrupado_por_lugar": 0.8405,
+  "config_final_id": "E4",
+  "config_final": {
+    "checkpoint": "beto",
+    "lr": 2e-05,
+    "epochs": 6,
+    "batch_size": 16,
+    "max_len": 128,
+    "pesos": "ninguno",
+    "congelar": false
+  },
+  "acc_fold0_mejor": 0.9568,
+  "acc_cv_modelo": 0.9283,
+  "f1_macro_cv_modelo": 0.8171,
+  "recall_neg_cv": 0.5,
+  "dif_acc_modelo_menos_base": 0.0309,
+  "dif_acc_ic": [
+    0.0111,
+    0.0519
+  ],
+  "acc_reserva_modelo": 0.9167,
+  "f1_macro_reserva_modelo": 0.696,
+  "recall_neg_reserva": 0.2,
+  "acc_reserva_base": 0.9109,
+  "n_reserva": 348,
+  "robustez_caida_acc": {
+    "original": 0.0,
+    "ortografía": 0.0431,
+    "sin tildes ni mayúsculas": -0.0029,
+    "palabras pegadas": 0.4741
+  },
+  "coincidencia_script_notebook": 1.0,
+  "params_millones": 109.9,
+  "tamano_modelo_mb": 420,
+  "latencia_gpu_ms": 11.0,
+  "latencia_gpu_p95_ms": 12.1,
+  "resenas_por_segundo_gpu": 288,
+  "mem_pico_mb": 704,
+  "latencia_cpu_ms": 88.4,
+  "cuantizado_acc_reserva": 0.9195,
+  "cuantizado_latencia_cpu_ms": 53.6,
+  "cuantizado_tamano_mb": 174,
+  "cumple_criterios": true,
+  "drift": {
+    "Destino nuevo: Coveñas": {
+      "acc_modelo_referencia": 0.969,
+      "acc_modelo_drift": 0.959,
+      "caida_modelo": 0.01
+    },
+    "Época nueva: 2018 en adelante": {
+      "acc_modelo_referencia": 0.982,
+      "acc_modelo_drift": 0.97,
+      "caida_modelo": 0.013
+    }
+  }
+}
